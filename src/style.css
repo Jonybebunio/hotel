@@ -1,0 +1,211 @@
+/* website head*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap')
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+  background: 
+#E6E5C5
+;
+ }
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.header{
+  boder-bottom: 1px solid #E2E8F0;
+  }
+#header-menu{
+  position:fixed;
+  top:0;
+  background:white;
+  width:100%;  
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 1rem 1.5rem;
+}
+
+.hamburger{
+ display: none; 
+}
+
+.bar{
+  display: block;
+  width:25px;
+  height:3px;
+  margin:5px auto;
+  -webkit-transition: all 0.3s easy-in-out;
+  transition:all 0.3s easy-in-out;
+  background-color:#101010;
+}
+
+.nav-menu{
+  display:flex;
+  justify-content: space-between;
+  align-left:center;
+}
+
+.nav-item{
+  margin-left: 5rem;
+  }
+
+.nav-link{
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #475569;
+}
+
+.nav-link:hover{
+  color: #482ff7;
+}
+
+.nav-logo{
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #482ff7;
+}
+
+@media only screen and (max-width: 785px){
+  .nav-menu{
+    position:fixed;
+    left: -100%;
+    top:5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width:100%;
+    border-radius: 10px;
+    text-align: center;
+    transition; 0.3s;
+    box-shadow: 0.10px 27px rgba(0,0,0,0.05);
+  }
+  .nav-menu.active{
+    left: 0;    
+  }
+  .nav-item{
+    margin: 2.5rem 0;
+  }
+  .hamburger{
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/*website body*/
+img{
+  object-fit:cover;
+  width: 100%;
+  height:500px;
+}
+  
+.button-img{
+  display: flex;
+  justify-content:center;
+  top:10%;
+  
+  }
+
+.map{
+  margin-left:25%;
+  margin-right:25%;
+  width:50%;
+  border: 60px solid black;
+}
+ 
+}
+/* styling carousel buttons*/
+ion-icon{
+  border-radius:50%;
+}
+ion-icon:hover{
+  color: #482ff7;
+  display: block;
+  cursor: pointer;
+    }
+#previous{
+  top:110%;
+}
+#next{}
+
+
+/*booking pop-up*/ 
+
+
+/*booking pop-up form*/
+.popup{
+  position:absolute;
+  top:50%;
+  left:50%;
+  
+  width: 300%;
+  padding: 20px 30px;
+  background: #fff;
+  box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+  boder-raius: 10px;  
+  
+}
+
+/*booking pop-up to put the button infront and set the closing button*/
+
+/*booking pop-up end*/
+
+/*fixing body separation*/
+#division {
+  padding-bottom: 30%;
+  padding-top:-10%;
+  text:#482ff7;
+  
+  }
+/*Services*/
+h2 {
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  color:#482ff7;
+  line-height: 1.6;}
+
+@media (max-width: 550px){
+  h2{font-size: 16px}
+}
+@media(min-width: 551px){
+  h2{font-size:16px;}
+}
+#list1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  }
+#list2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  }
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
